@@ -57,3 +57,14 @@ int main() {
     
     return 0;
 }
+
+
+OUTPUT:
+PID	Arrival Time	Burst Time	Waiting Time	Turnaround Time
+1	0		5		7		12
+2	1		3		0		3
+3	2		3		3		6
+4	4		1		0		1
+Average waiting time: 2.50
+Average turnaround time: 5.50
+
