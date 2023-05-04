@@ -34,12 +34,20 @@ int main()
     getch(); 
 
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
+
+
+OUTPUT:
+enter the number of proces:
+4
+enter the process id for each process:
+1
+3
+5
+7
+enter the burst time for each process:
+2
+4
+6
+8
+Average Waiting Time:5.000000average turn around time is:10.000000
+
