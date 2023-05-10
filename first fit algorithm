@@ -36,3 +36,17 @@ int main() {
     
     return 0;
 }
+
+
+OUTPUT:
+
+Initial memory partitions:
+300 KB 600 KB 350 KB 200 KB 750 KB 125 KB 
+Process 1 (size 115 KB) allocated to partition 1 (size 300 KB)
+Process 2 (size 500 KB) allocated to partition 2 (size 600 KB)
+Process 3 (size 358 KB) allocated to partition 5 (size 750 KB)
+Process 4 (size 200 KB) allocated to partition 3 (size 350 KB)
+Process 5 (size 375 KB) allocated to partition 5 (size 392 KB)
+Final memory partitions:
+185 KB 100 KB 150 KB 200 KB 17 KB 125 KB 
+
