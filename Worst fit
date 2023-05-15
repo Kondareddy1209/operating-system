@@ -91,14 +91,13 @@ enter the no of memoryblocks:5
 300
 
 blocksize       process size    processno       fragmentation
-100             0                 0
-425             250             2               175
-200             0               0               200
-380             347             4               33
-450             300             1               150
-250             222             5               28
-totalmemoryallocation:2105
-memoryused:1294
+100             0                 0             100
+200             150               4             50
+150             0                 0             150
+250             200               2             50
+300             100               1             200
+totalmemoryallocation:1000
+memoryused:450
 
 --------------------------------
 Process exited after 87.6 seconds with return value 0
