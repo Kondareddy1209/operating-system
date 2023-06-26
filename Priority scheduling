@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+struct Process {
+    int id;
+    int priority;
+};
+
+void priorityScheduling(struct Process processes[], int n) {
+    int total_time = 0;
+    int i, j;
+
+    // Calculate total time required for all processes
+    for (i = 0; i < n; i++) {
+        total_time += processes[i].priority;
+    }
+
+    // Sort the processes based on priority (in ascending order)
+    for (i = 0; i < n - 1; i++) {
+        for (j = 0; j < n - i - 1; j++) {
+            if (processes[j].priority > processes[j + 1].priority) {
+                // Swap the processes
+                struct Process temp = processes[j];
+                processes[j] = processes[j + 1];
+                processes[j + 1] = temp;
+            }
+        }
+    }
+
+    // Display the order of execution
+    printf("Order of execution:\n");
+    for (i = 0; i < n; i++) {
+        printf("Process ID: %d, Priority: %d\n", processes[i].id, processes[i].priority);
+    }
+}
+
+int main() {
+    // Example processes
+    struct Process processes[5] = {
+        {1, 3},
+        {2, 2},
+        {3, 4},
+        {4, 1},
+        {5, 5}
+    };
+
+    int num_processes = sizeof(processes) / sizeof(processes[0]);
+
+    // Perform priority scheduling
+    priorityScheduling(processes, num_processes);
+
+    return 0;
+}
